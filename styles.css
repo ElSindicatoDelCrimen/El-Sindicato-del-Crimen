@@ -111,16 +111,13 @@ button:hover {
 }
 
 @media (max-width: 600px) {
-    body, .container {
-        padding: 10px;
+    body {
+        margin: 5px; /* Reduce los márgenes en dispositivos móviles */
+        padding: 10px; /* Asegura suficiente espacio alrededor del contenido */
     }
-
-    header, .content {
-        width: 100%;
-    }
-
-    .modal-content {
-        width: 80%;
-        padding: 15px;
+    .container, .modal-content {
+        width: 95%; /* Usa más del ancho disponible */
+        margin: 5px auto; /* Centra y reduce el margen vertical */
+        padding: 10px; /* Consistente padding en todos los dispositivos */
     }
 }
