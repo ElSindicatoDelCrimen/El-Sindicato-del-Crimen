@@ -1,0 +1,53 @@
+body {
+    font-family: 'Arial', sans-serif; /* Cambio para mejorar la legibilidad */
+    background-color: #0a0a0a; /* Fondo oscuro para resaltar el texto */
+    color: #e0e0e0; /* Texto claro para contraste */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    text-align: center;
+}
+
+.chat-container {
+    background-color: #111;
+    border: 2px solid #444;
+    padding: 20px;
+    width: 90%; /* Ajustado para dispositivos móviles */
+    max-width: 600px;
+    margin: 20px auto;
+    height: auto; /* Altura automática para adaptarse al contenido */
+    overflow-y: auto;
+    color: #ddd;
+    text-align: left;
+    font-size: 16px; /* Tamaño de fuente óptimo para móviles */
+    box-shadow: 0 4px 6px rgba(0,0,0,0.3); /* Sombra suave para profundidad */
+}
+
+#chatMessages {
+    list-style: none;
+    padding: 0;
+}
+
+#chatMessages li {
+    margin-bottom: 10px; /* Espacio entre mensajes para claridad */
+    font-family: 'Courier New', Courier, monospace;
+}
+
+strong {
+    color: #f55; /* Color para nombres, destacando los usuarios */
+}
+
+@media (max-width: 600px) {
+    .chat-container {
+        width: 95%; /* Mayor anchura para aprovechar mejor el espacio en móviles */
+        padding: 15px; /* Padding reducido para espacios más pequeños */
+        margin: 10px auto; /* Menor margen para maximizar el uso del espacio */
+    }
+
+    #chatMessages li {
+        font-size: 14px; /* Ligeramente menor para ajustarse a variaciones de pantalla */
+    }
+}
