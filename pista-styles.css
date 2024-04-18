@@ -29,12 +29,11 @@ strong {
 
 @media (max-width: 600px) {
     .chat-container {
-        width: 95%; /* Más ancho en dispositivos móviles para reducir márgenes */
-        padding: 15px;
-        margin: 10px auto;
+        width: 95%; /* Aumenta el ancho para dispositivos móviles */
+        margin: 5px auto; /* Reduce los márgenes vertical y horizontal */
+        padding: 10px; /* Adecuado para tocar en dispositivos táctiles */
     }
-
     #chatMessages li {
-        font-size: 14px; /* Ajuste para mantener la proporción y legibilidad */
+        font-size: 14px; /* Asegura que el texto es legible sin ser demasiado grande */
     }
 }
