@@ -12,10 +12,10 @@ document.addEventListener('DOMContentLoaded', function() {
         "<li><strong>Lex Luthor:</strong> Si van a seguir con esto, al menos intenten no arruinar mis planes con vuestro circo ambulante.</li>"
     ];
 
-    // Función para añadir cada mensaje con un delay de 2 segundos entre cada uno
+    // Función para añadir cada mensaje con un delay de 1.5 segundos entre cada uno
     newMessages.forEach((msg, index) => {
         setTimeout(() => {
             messages.innerHTML += msg;
-        }, (index + 1) * 2000); // Cambio de tiempo a 2 segundos entre mensajes
+        }, (index + 1) * 1500); // Cambio de tiempo a 1.5 segundos entre mensajes
     });
 });
