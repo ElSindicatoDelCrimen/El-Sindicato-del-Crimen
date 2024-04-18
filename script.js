@@ -13,13 +13,13 @@ const countdownFunction = setInterval(function() {
 
     if (distance < 0) {
         clearInterval(countdownFunction);
-        document.getElementById("countdown").innerHTML = "La clave de acceso al chat es: 1234"; // Asegúrate de ajustar este mensaje y la clave como consideres apropiado
+        document.getElementById("countdown").innerHTML = "La clave de acceso al chat es: 12345"; // Asegúrate de ajustar este mensaje y la clave como consideres apropiado
     }
 }, 1000);
 
 function checkPassword() {
     const passwordInput = document.getElementById("password").value;
-    const secretPassword = "La contraseña es TONTOQUIENLOLEA"; // Asegúrate de que esto coincida con el mensaje revelado
+    const secretPassword = "12345"; // Asegúrate de que esto coincida con el mensaje revelado
 
     if (passwordInput === secretPassword) {
         window.location.href = 'pista.html';
@@ -39,3 +39,17 @@ window.onload = function() {
 
     window.acceptTerms = acceptTerms; // Hacer la función accesible globalmente para ser llamada desde el HTML
 }
+
+document.addEventListener('DOMContentLoaded', function() {
+    const messages = document.getElementById('chatMessages');
+    const newMessages = [
+        "<li><strong>Harley Quinn:</strong> ¡Necesito más explosivos! ¿Alguien puede compartir?</li>",
+        "<li><strong>Black Manta:</strong> He tomado el control de los siete mares, ¿alguien necesita un poco de agua?</li>"
+    ];
+
+    newMessages.forEach((msg, index) => {
+        setTimeout(() => {
+            messages.innerHTML += msg;
+        }, (index + 1) * 5000); // Añade mensajes cada 5 segundos
+    });
+});
