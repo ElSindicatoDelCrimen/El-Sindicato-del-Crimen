@@ -135,6 +135,7 @@ button:hover {
     height: 400px;
     overflow-y: auto;
     color: #ddd;
+    text-align: left; /* Asegura que todo el texto dentro del contenedor del chat esté justificado a la izquierda */
 }
 
 #chatMessages {
@@ -150,3 +151,4 @@ button:hover {
 strong {
     color: #f55;
 }
+
