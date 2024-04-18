@@ -17,14 +17,14 @@ body {
 
 .container {
     width: 100%;    
-    /**/
+    /*Incluido para mejorar la compatibilidad movil*/
     height: 100%;
     overflow: auto;
     position: fixed;
     z-index: 2;
     left: 0;
     top: 0;
-    /**/
+    /*Eliminado para mejorar la compatibilidad movil*/
     /*max-width: 600px;*/
     background: rgba(0, 0, 0, 0.75);
     border-radius: 10px;
