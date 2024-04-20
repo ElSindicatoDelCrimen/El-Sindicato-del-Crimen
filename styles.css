@@ -28,7 +28,7 @@ body {
     background: rgba(0, 0, 0, 0.75);
 }
 
-.news-container p {
+.news-container p, li {
     text-align: justify; /* Justifica el texto */
     text-justify: inter-word; /* Ajusta la justificación para mejorar el espaciado */
     hyphens: auto; /* Permite la división de palabras al final de las líneas */
