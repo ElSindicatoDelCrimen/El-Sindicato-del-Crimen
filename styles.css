@@ -16,7 +16,7 @@ body {
 }
 
 .container, .news-container {
-    width: 100%;
+    width: 95%;
     height: 100%;
     overflow: auto;
     position: fixed;
