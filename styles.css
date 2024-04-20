@@ -122,15 +122,16 @@ footer p {
 }
 
 .news-image {
-    width: 100%;
-    height: auto;
-    margin: 20px 0;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
-    object-fit: cover;
-    display: block;
-    max-width: 100%;
+    width: 100%; /* Asegura que la imagen se ajuste al ancho del contenedor */
+    height: auto; /* Mantiene la proporción de la imagen */
+    margin: 20px auto; /* Centra la imagen horizontalmente y añade margen vertical */
+    border-radius: 8px; /* Bordes redondeados para un estilo suave */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3); /* Añade una sombra para dar profundidad */
+    object-fit: cover; /* Asegura que la imagen cubra el área designada sin distorsión */
+    display: block; /* Asegura que la imagen no tenga espacio extra alrededor */
+    max-width: 60%; /* Reduce el tamaño máximo de la imagen para que no sea demasiado grande */
 }
+
 
 @media (max-width: 600px) {
     body, .container, .news-container {
