@@ -17,7 +17,7 @@ body {
 
 .container, .news-container {
     width: 100%;
-    max-width: 800px; /* Asegura un máximo razonable para la anchura */
+    max-width: 600px; /* Asegura un máximo razonable para la anchura */
     height: auto; /* Permite que el contenedor crezca con el contenido */
     overflow: auto; /* Permite desplazamiento si el contenido es demasiado grande */
     padding: 20px 30px; /* Aumenta el padding si es necesario */
