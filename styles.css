@@ -73,6 +73,8 @@ button {
     color: white;
     border: none;
     cursor: pointer;
+    font-size: 1.25em; /* Increased for better readability on mobile */
+    padding: 15px 30px;
 }
 
 button:hover {
