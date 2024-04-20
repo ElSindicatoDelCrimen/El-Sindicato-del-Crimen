@@ -16,17 +16,16 @@ body {
 }
 
 .container, .news-container {
-    width: 90%;
-    height: 90%;
-    overflow: auto;
-    position: fixed;
-    z-index: 2;
-    left: 0;
-    top: 0;
-    background: rgba(0, 0, 0, 0.75);
-    border-radius: 10px;
-    padding: 20px;
+    width: 100%;
+    max-width: 800px; /* Asegura un máximo razonable para la anchura */
+    height: auto; /* Permite que el contenedor crezca con el contenido */
+    overflow: auto; /* Permite desplazamiento si el contenido es demasiado grande */
+    padding: 20px 30px; /* Aumenta el padding si es necesario */
+    margin: 20px auto; /* Centra el contenedor horizontalmente */
     box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    border-radius: 10px;
+    position: relative; /* Asegúrate de que no esté fijado de manera que corte el contenido */
+    background: rgba(0, 0, 0, 0.75);
 }
 
 header h1, h2 {
