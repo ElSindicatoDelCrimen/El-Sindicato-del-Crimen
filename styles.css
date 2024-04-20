@@ -28,6 +28,11 @@ body {
     background: rgba(0, 0, 0, 0.75);
 }
 
+.news-container p, .news-container li {
+    word-wrap: break-word; /* Asegura que las palabras no sobrepasen el contenedor */
+    hyphens: auto; /* Permite la división de palabras en sílabas al final de la línea si es necesario */
+}
+
 header h1, h2 {
     color: #ff0000;
 }
