@@ -15,15 +15,18 @@ body {
     min-height: 100vh;
 }
 
-.container, .news-container {
-    background: rgba(0, 0, 0, 0.75);
-    color: #e0e0e0;
-    padding: 20px;
-    border-radius: 10px;
-    margin: 20px auto;
-    max-width: 800px;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-    overflow: hidden;
+.container, .news-container  {
+    width: 100%;
+    height: 100%; /* Asegura que el contenedor ocupe toda la altura */
+    overflow: auto; /* Permite desplazamiento si el contenido excede el tamaño del contenedor */
+    position: fixed; /* Fija el contenedor en una posición absoluta dentro de la ventana gráfica */
+    z-index: 2; /* Mantiene el contenedor sobre otros elementos */
+    left: 0;
+    top: 0;
+    background: rgba(0, 0, 0, 0.75); /* Semi-transparente para permitir visibilidad del fondo */
+    border-radius: 10px; /* Bordes redondeados para un aspecto más suave */
+    padding: 20px; /* Espaciado interno para evitar que el contenido toque los bordes */
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1); /* Sombra sutil para dar profundidad */
 }
 
 header h1, h2 {
