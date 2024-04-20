@@ -16,8 +16,8 @@ body {
 }
 
 .container, .news-container {
-    width: 95%;
-    height: 95%;
+    width: 90%;
+    height: 90%;
     overflow: auto;
     position: fixed;
     z-index: 2;
