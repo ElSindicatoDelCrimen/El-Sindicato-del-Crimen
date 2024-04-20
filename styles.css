@@ -62,6 +62,13 @@ header h1, h2 {
     text-decoration: underline;
 }
 
+.news-image {
+    width: 100%; /* Asegura que la imagen se ajuste al ancho del contenedor */
+    height: auto; /* Mantiene la proporción de la imagen, evitando que se deforme */
+    margin: 20px 0; /* Añade un margen superior e inferior para separarla del texto */
+    border-radius: 8px; /* Opcional: Añade bordes redondeados para un estilo suave */
+}
+
 input[type="password"], button {
     width: 100%;
     padding: 12px;
