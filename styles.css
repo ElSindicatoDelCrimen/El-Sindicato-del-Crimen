@@ -28,9 +28,10 @@ body {
     background: rgba(0, 0, 0, 0.75);
 }
 
-.news-container p, .news-container li {
-    word-wrap: break-word; /* Asegura que las palabras no sobrepasen el contenedor */
-    hyphens: auto; /* Permite la división de palabras en sílabas al final de la línea si es necesario */
+.news-container p {
+    text-align: justify; /* Justifica el texto */
+    text-justify: inter-word; /* Ajusta la justificación para mejorar el espaciado */
+    hyphens: auto; /* Permite la división de palabras al final de las líneas */
 }
 
 header h1, h2 {
@@ -126,14 +127,14 @@ footer p {
 }
 
 .news-image {
-    width: 100%; /* Asegura que la imagen se ajuste al ancho del contenedor */
-    height: auto; /* Mantiene la proporción de la imagen */
-    margin: 20px auto; /* Añade margen superior e inferior */
-    border-radius: 8px; /* Bordes redondeados */
-    box-shadow: 0 4px 8px rgba(0,0,0,0.3); /* Sombra para dar profundidad */
-    object-fit: cover; /* Asegura que la imagen cubra adecuadamente el espacio sin distorsionar */
-    display: block; /* Elimina cualquier espacio extra alrededor de la imagen */
-    max-width: 60%; /* Reduce el tamaño máximo de la imagen para mejor estética */
+    width: 100%;
+    height: auto;
+    margin: 20px auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    object-fit: cover;
+    display: block;
+    max-width: 60%;
 }
 
 @media (max-width: 600px) {
