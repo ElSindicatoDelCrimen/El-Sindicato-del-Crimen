@@ -13,7 +13,7 @@ const countdownFunction = setInterval(function() {
 
     if (distance < 0) {
         clearInterval(countdownFunction);
-        document.getElementById("countdown").innerHTML = "La clave de acceso al chat es: 12345"; // Asegúrate de ajustar este mensaje y la clave como consideres apropiado
+        document.getElementById("countdown").innerHTML = "BIEN JUEGADO, HASTA LA PRÓXIMA"; // Asegúrate de ajustar este mensaje y la clave como consideres apropiado
     }
 }, 1000);
 
