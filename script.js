@@ -39,3 +39,13 @@ window.onload = function() {
 
     window.acceptTerms = acceptTerms; // Hacer la función accesible globalmente para ser llamada desde el HTML
 }
+
+// Funcion para que se vea la foto del cole, minutos antes de que acabe el juego.
+document.addEventListener('DOMContentLoaded', function() {
+    var eventDate = new Date('2024-04-25T18:00:00'); // Establece la fecha y hora del evento
+    var currentDate = new Date(); // Obtiene la fecha y hora actual
+
+    if (currentDate >= eventDate) {
+        document.getElementById('eventSection').style.display = 'block'; // Muestra la sección si ha llegado la hora
+    }
+});
