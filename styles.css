@@ -137,6 +137,14 @@ footer p {
     max-width: 60%;
 }
 
+#eventSection {
+    display: none;
+    text-align: center;
+    background-color: #222;
+    color: white;
+    padding: 20px;
+}
+
 @media (max-width: 600px) {
     body, .container, .news-container {
         padding: 10px;
