@@ -19,7 +19,7 @@ const countdownFunction = setInterval(function() {
 
 function checkPassword() {
     const passwordInput = document.getElementById("password").value;
-    const secretPassword = "12345"; // Asegúrate de que esto coincida con el mensaje revelado
+    const secretPassword = "bySAL215li112112AR"; // Asegúrate de que esto coincida con el mensaje revelado
 
     if (passwordInput === secretPassword) {
         window.location.href = 'pista.html';
